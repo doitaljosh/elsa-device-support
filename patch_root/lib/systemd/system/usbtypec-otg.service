@@ -1,0 +1,8 @@
+[Unit]
+Description=USB Type C OTG helper script
+
+[Service]
+ExecStart=/usr/bin/typec_host_init.sh
+
+[Install]
+WantedBy=basic.target

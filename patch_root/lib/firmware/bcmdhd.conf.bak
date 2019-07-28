@@ -1,0 +1,16 @@
+btc_mode=1
+bcn_timeout=4
+country=KR/57
+vlan_mode=0
+mpc=1
+wme_auto_trigger=0
+wme_apsd_trigger=290000
+roam_off=0
+roam_scan_period=10
+roam_delta=20
+roam_trigger=-80
+PM=2
+assoc_listen=10
+assoc_retry_max=7
+arp_peerage=3600
+cur_etheraddr=d0:13:fd:43:58:1c

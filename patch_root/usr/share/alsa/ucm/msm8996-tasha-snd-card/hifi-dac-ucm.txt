@@ -1,0 +1,55 @@
+SectionDevice."HeadsetHiFi" {
+	Comment "Headset (HiFi DAC)"
+	
+	ConflictingDevice [
+	"Speaker"
+	"Headset"
+	"Earpiece"
+	]
+	
+	EnableSequence [
+		cdev "hw:0"
+		
+		cset "name='SLIM RX0 MUX' AIF_MIX1_PB"
+		cset "name='SLIM RX1 MUX' AIF_MIX1_PB"
+		cset "name='SLIM_0_RX Channels' Two"
+		cset "name='RX INT1_2 MUX' RX0"
+		cset "name='RX INT2_2 MUX' RX1"
+		cset "name='RX INT1 DEM MUX' CLSH_DSM_OUT"
+		cset "name='RX INT2 DEM MUX' CLSH_DSM_OUT"
+		cset "name='RX0 Digital Volume' 84"
+		cset "name='RX1 Digital Volume' 84"
+		cset "name='Es9018 Bypass' 0"
+		cset "name='Es9018 Chip State' 1"
+		cset "name='Es9018 State' 3"
+		cset "name='Es9018 HEADSET TYPE' 2"
+		cset "name='Es9018 Master Volume' 1"
+		cset "name='Es9018 AVC Volume' 7"
+		cset "name='SEC_MI2S_RX Audio Mixer MultiMedia1' 1"
+	]
+	
+	DisableSequence [
+		cdev "hw:0"
+		
+		cset "name='SEC_MI2S_RX Audio Mixer MultiMedia1' 0"
+		cset "name='SLIM RX0 MUX' ZERO"
+		cset "name='SLIM RX1 MUX' ZERO"
+		cset "name='SLIM_0_RX Channels' Two"
+		cset "name='RX INT1_2 MUX' ZERO"
+		cset "name='RX INT2_2 MUX' ZERO"
+		cset "name='RX INT1 DEM MUX' ZERO"
+		cset "name='RX INT2 DEM MUX' ZERO"
+		cset "name='RX0 Digital Volume' 0"
+		cset "name='RX1 Digital Volume' 0"
+		cset "name='Es9018 Bypass' 0"
+		cset "name='Es9018 Chip State' 0"
+		cset "name='Es9018 State' 0"
+		cset "name='Es9018 HEADSET TYPE' 0"
+		cset "name='Es9018 Master Volume' 0"
+		cset "name='Es9018 AVC Volume' 0"
+	]
+	
+	Value {
+		PlaybackChannels "2"
+	}
+}

@@ -1,0 +1,1 @@
+cmd_include/generated/vdso-offsets.h := 	/media/doitaljosh/NASDrive/development/elsa/toolchains/aarch64-linux-android-4.9/bin/aarch64-linux-android-nm arch/arm64/kernel/vdso/vdso.so.dbg | /media/doitaljosh/NASDrive/development/elsa/kernel/gnulinux_kernel_lge_msm8996/arch/arm64/kernel/vdso/gen_vdso_offsets.sh | LC_ALL=C sort > include/generated/vdso-offsets.h

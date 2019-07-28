@@ -1,6 +1,6 @@
 Device support package to optimize Linux distros for the LG V20's hardware.
 
-##What works:
+## What works:
 - display/touch
 - internal speaker
 - HiFi DAC
@@ -10,5 +10,5 @@ Device support package to optimize Linux distros for the LG V20's hardware.
 - bluetooth (partial)
 - battery/charging
 
-##Installation:
-#Extract, then ```cd``` to it. Install ```rsync``` then run ```rsync -avd patch_root/ /```
+## Installation:
+# Extract, then ```cd``` to it. Install ```rsync``` then run ```rsync -avd patch_root/ /```

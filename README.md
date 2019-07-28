@@ -11,4 +11,4 @@ Device support package to optimize Linux distros for the LG V20's hardware.
 - battery/charging
 
 ## Installation:
-### Extract, then ```cd``` to it. Install ```rsync``` then run ```rsync -avd patch_root/ /```
+### Extract, then ```cd``` to it. Install ```rsync``` then run ```rsync -avd patch_root/ [rootfs dir]/```

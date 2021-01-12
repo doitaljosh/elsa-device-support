@@ -1,0 +1,9 @@
+[Unit]
+Description=Qualcomm thermal engine service
+
+[Service]
+ExecStart=/usr/bin/thermal-engine -c /etc/thermal-engine-8996.conf
+ExecStop=/bin/pkill -9 thermal-engine
+
+[Install]
+WantedBy=multi-user.target
